@@ -4,7 +4,9 @@
   "description": "Grunt package to update the RTE of current webpackage",
   "main": "Gruntfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublish": "npm run lint",
+    "lint": "eslint lib task test/unit *.js",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
