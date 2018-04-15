@@ -22,6 +22,7 @@ module.exports = function (grunt) {
             if (!versionRegExp.test(input)) {
               throw new Error('Invalid Rte version (' + input + '). Please provide a valid value like 2.3.0 or 3.0.0-SNAPSHOT');
             }
+            return true;
           }
         }
       ]
